@@ -1,0 +1,23 @@
+{
+  "name": "wvu-patterns-footer-links",
+  "version": "0.0.1",
+  "authors": [
+    "Steven Spriggs <steven.spriggs@gmail.com>"
+  ],
+  "description": "WVU Pattern Library - Footer Links Module",
+  "main": "./wvu-footer__links.scss",
+  "keywords": [
+    "wvu",
+    "west virginia university",
+    "css",
+    "scss"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
