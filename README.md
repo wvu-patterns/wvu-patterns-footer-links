@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/wvu-patterns/wvu-patterns-footer-links.svg?branch=master)](https://travis-ci.org/wvu-patterns/wvu-patterns-footer-links)
 
+Use [Bower](http://bower.io/) to install this module.
+
 ```bash
 $ bower install --save wvu-patterns-footer-links
 ```
