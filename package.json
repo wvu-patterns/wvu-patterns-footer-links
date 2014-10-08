@@ -1,0 +1,33 @@
+{
+  "name": "wvu-patterns-footer-links",
+  "version": "0.0.6",
+  "description": "WVU Pattern LIbrary - Footer Links Module",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://zeroedin@github.com/wvu-patterns/wvu-patterns-footer-links.git"
+  },
+  "keywords": [
+    "wvu",
+    "scss",
+    "west virginia university"
+  ],
+  "author": "Steven Spriggs <steven.spriggs@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wvu-patterns/wvu-patterns-footer-links/issues"
+  },
+  "homepage": "https://github.com/wvu-patterns/wvu-patterns-footer-links",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "^1.0.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-inject": "^1.0.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.0.0",
+    "gulp-scss-lint": "^0.1.4"
+  }
+}
