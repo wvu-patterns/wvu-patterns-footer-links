@@ -60,5 +60,5 @@ gulp.task('build',['clean','inject-css'],function(){
   return
 });
 
-gulp.task('test',['scss-lint']);
-gulp.task('ci',['build']);
+gulp.task('test',['build']);
+gulp.task('ci',['scss-lint']);
