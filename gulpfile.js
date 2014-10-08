@@ -17,7 +17,8 @@ gulp.task('scss-lint', function() {
   return gulp.src('./src/scss/*.scss')
     .pipe(scsslint({
       'config': '.scss-lint.yml'
-    }));
+    }))
+    .pipe(scsslint.failReporter());
 });
 
 gulp.task('rename-scss-partial',function(){
