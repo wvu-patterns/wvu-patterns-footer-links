@@ -31,9 +31,9 @@ Requires:
 * NodeJS
 * Gulp
 
-####Installation
-
 *RVM is Preferred* but not required
+
+####Installation
 
 * `cd {install-dir}/wvu-patterns-footer-links`
 * `gem install bundler`
