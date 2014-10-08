@@ -34,7 +34,7 @@ Requires:
 *RVM is Preferred* but not required
 
 * `cd {install-dir}/wvu-patterns-footer-links`
-* gem install bundler
+* `gem install bundler`
 * `bundle install`
 * `npm install`
 
