@@ -5,12 +5,20 @@ var gulp = require('gulp'),
     prefix = require('gulp-autoprefixer'),
     rename = require('gulp-rename'),
     inject = require("gulp-inject"),
-    clean = require("gulp-clean"),
+    del = require("del"),
+    runSequence = require('run-sequence'),
     scsslint = require('gulp-scss-lint');
 
-gulp.task('clean', function () {
-  return gulp.src('./build/*', { read: false })
-    .pipe(clean());
+// Replaced with node del 
+// gulp.task('clean', function () {
+//   return gulp.src('./build/*', { read: false })
+//     .pipe(clean());
+// });
+// https://github.com/gulpjs/gulp/blob/master/docs/recipes/delete-files-folder.md
+gulp.task('clean', function(cb){
+  del([
+    'build/**/*'
+  ], cb);
 });
 
 gulp.task('scss-lint', function() {
@@ -57,9 +65,10 @@ gulp.task('inject-css', ['scss-lint','copy-test','compile-css'], function () {
   .pipe(gulp.dest('./build/'))
 });
 
-gulp.task('build',['clean','inject-css'],function(){
-  return
+gulp.task('build',function(){
+  runSequence('clean','inject-css');
 });
+
 
 gulp.task('test',['build']);
 gulp.task('ci',['scss-lint']);
