@@ -31,7 +31,7 @@ gulp.task('scss-lint', function() {
 
 gulp.task('rename-scss-partial',function(){
   return gulp.src('./src/scss/_wvu-footer__links.scss')
-    .pipe(rename('styles.scss'))
+    .pipe(rename('wvu-footer__links.scss'))
     .pipe(gulp.dest('./build/scss/'));
 });
 
@@ -45,12 +45,12 @@ gulp.task('compile-css', ['rename-scss-partial'], function(){
     .pipe(gulp.dest('./build/css/'));
 });
 
-gulp.task('copy-test',function(){
+gulp.task('copy-test-html',function(){
   return gulp.src('./src/test/index.html')
     .pipe(gulp.dest('./build/'))
 })
 
-gulp.task('inject-css', ['scss-lint','copy-test','compile-css'], function () {
+gulp.task('inject-src', ['scss-lint','copy-test-html','compile-css'], function () {
   var target = gulp.src('./build/index.html');
   target.pipe(inject(gulp.src(['./build/css/*.css'], {read: false}), {relative: true}))
     .pipe(gulp.dest('./build/'));
@@ -66,7 +66,7 @@ gulp.task('inject-css', ['scss-lint','copy-test','compile-css'], function () {
 });
 
 gulp.task('build',function(){
-  runSequence('clean','inject-css');
+  runSequence('clean','inject-src');
 });
 
 
