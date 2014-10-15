@@ -11,54 +11,49 @@ $wvu-footer-twitter-svg-url: '//static.wvu.edu/global/images/icons/twitter/wvu-f
 $wvu-footer-youtube-png-url: '//static.wvu.edu/global/images/icons/youtube/wvu-footer/youtube__50x50--1.0.0.png' !default;
 $wvu-footer-youtube-svg-url: '//static.wvu.edu/global/images/icons/youtube/wvu-footer/youtube--1.0.0.svg' !default;
 
-.wvu-footer__links li {
-  display: inline; 
-  list-style-type: none;
+// Dependencies
+@import './bower_components/inuit-clearfix/_trumps.clearfix';
+
+.wvu-footer__links {
+  @extend %clearfix;
+  float: right;
+  width: 50%;
+
+  li {
+    display: inline; 
+    list-style-type: none;
   
-  &:before { 
-    content: '|'; 
-    padding-right: 3px; 
+    &:before { 
+      content: ''; 
+      padding-right: 3px; 
+    }
+  
+    &:first-child:before { 
+      content: '';
+      padding-right: 0; 
+    }
   }
-  
-  &:first-child:before { 
-    content: '';
-    padding-right: 0; 
-  }
-  
 } // .wvu-footer__links
 
-.wvu-footer__icons {
-  float: left; 
-  padding-bottom: 13px; 
+.wvu-footer__auxillary-links {
+  @extend %clearfix;
+  clear: both;
+  float: right;
+  margin: 0; 
+  padding: 3px 0;
   
-  ul { 
-    clear: both;
-    list-style-type: none; 
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-left: 0;
-  }
-  
-  li { 
-    display: inline; 
-    margin: 0; 
-  }
-  
-  @media ($wvu-footer-breakpoint) {
-    float: right;
-    margin-left: 0; 
-    margin-right: 0; 
-    width: 50%;
-    
-    ul {
-      float: right;
+  li {
+    &:before {
+      content: '|'; 
     }
-    
   }
-} //.wvu-footer__icons
+} // .wvu-footer__auxillary-links
 
 .wvu-footer__social {
-  float: left;
+  @extend %clearfix;
+  clear: both;
+  float: right;
+  margin: 0;
   padding: 3px 0;
   
   li { 

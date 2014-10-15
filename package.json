@@ -1,6 +1,6 @@
 {
   "name": "wvu-patterns-footer-links",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "WVU Pattern LIbrary - Footer Links Module",
   "main": "gulpfile.js",
   "scripts": {
