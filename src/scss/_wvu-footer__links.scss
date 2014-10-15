@@ -22,16 +22,6 @@ $wvu-footer-youtube-svg-url: '//static.wvu.edu/global/images/icons/youtube/wvu-f
   li {
     display: inline; 
     list-style-type: none;
-  
-    &:before { 
-      content: ''; 
-      padding-right: 3px; 
-    }
-  
-    &:first-child:before { 
-      content: '';
-      padding-right: 0; 
-    }
   }
 } // .wvu-footer__links
 
@@ -44,7 +34,13 @@ $wvu-footer-youtube-svg-url: '//static.wvu.edu/global/images/icons/youtube/wvu-f
   
   li {
     &:before {
-      content: '|'; 
+      content: '|';
+      padding-right: 3px;
+    }
+    
+    &:first-child:before { 
+      content: '';
+      padding-right: 0; 
     }
   }
 } // .wvu-footer__auxillary-links
@@ -56,26 +52,21 @@ $wvu-footer-youtube-svg-url: '//static.wvu.edu/global/images/icons/youtube/wvu-f
   margin: 0;
   padding: 3px 0;
   
-  li { 
-    float: left; 
-    
-    &:last-child a { 
-      margin-right: 0; 
-    }
-    
+  li {
+    float: left;
+    height: 24px;
+    width: 24px;
   }
   
   a {
     background-color: transparent;
     border: 0;
     float: left;
-    height: 24px; 
+    height: 100%; 
     margin: 0;
     overflow: hidden;
-    padding-left: 0; 
-    padding-top: 5px;
     text-indent: -9999px;
-    width: 24px;
+    width: 100%;
   }
   
 } //.wvu-footer__social
