@@ -16,12 +16,16 @@ $wvu-footer-youtube-svg-url: '//static.wvu.edu/global/images/icons/youtube/wvu-f
 
 .wvu-footer__links {
   @extend %clearfix;
-  float: right;
-  width: 50%;
+  float: left;
 
   li {
     display: inline; 
     list-style-type: none;
+  }
+  
+  @media ($wvu-footer-breakpoint) {
+    float: right;
+    width: 50%;
   }
 } // .wvu-footer__links
 
