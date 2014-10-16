@@ -25,6 +25,7 @@ $wvu-footer-youtube-svg-url: '//static.wvu.edu/global/images/icons/youtube/wvu-f
   }
   
   @media (#{$wvu-footer-breakpoint}) {
+    clear: none;
     float: right;
     width: 50%;
   }
