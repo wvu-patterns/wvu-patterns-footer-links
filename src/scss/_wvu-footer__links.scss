@@ -22,7 +22,7 @@ $wvu-footer-youtube-svg-url: '//static.wvu.edu/global/images/icons/youtube/wvu-f
     list-style-type: none;
   }
   
-  @media ($wvu-footer-breakpoint) {
+  @media (#{$wvu-footer-breakpoint}) {
     float: right;
     width: 50%;
   }
