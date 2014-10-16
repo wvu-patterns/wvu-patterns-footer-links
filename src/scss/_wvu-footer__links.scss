@@ -16,7 +16,6 @@ $wvu-footer-youtube-svg-url: '//static.wvu.edu/global/images/icons/youtube/wvu-f
 
 .wvu-footer__links {
   @extend %clearfix;
-  float: left;
 
   li {
     display: inline; 
