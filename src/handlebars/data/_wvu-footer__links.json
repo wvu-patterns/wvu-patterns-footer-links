@@ -1,0 +1,20 @@
+{
+  "_wvu-footer__links": {
+    "css": [
+      { "src":"css/wvu-footer__links.css" }
+    ],
+    "auxillary": [
+      { "href":"http://www.wvuf.org/", "title":"Give" },
+      { "href":"http://myaccess.wvu.edu/", "title":"MyAccess" },
+      { "href":"http://careerservices.wvu.edu/mountaineertraklogins/", "title":"MountaineerTRAK" },
+      { "href":"http://emergency.wvu.edu/alert/", "title":"WVU Alert" },
+      { "href":"http://wvutoday.wvu.edu", "title":"WVU Today" },
+      { "href":"http://mix.wvu.edu/", "title":"MIX" }
+    ],
+    "social": [
+      { "href":"http://www.facebook.com/wvumountaineers", "title":"WVU on Facebook", "class":"wvu-footer__facebook" },
+      { "href":"https://twitter.com/WestVirginiaU/", "title":"WVU on Twitter", "class":"wvu-footer__twitter" },
+      { "href":"http://videos.wvu.edu", "title":"WVU on YouTube", "class":"wvu-footer__youtube" }
+    ]
+  }
+}
